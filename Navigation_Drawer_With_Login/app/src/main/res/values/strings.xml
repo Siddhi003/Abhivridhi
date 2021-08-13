@@ -4,4 +4,12 @@
     <string name="close">close</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="apply_for_a_n_fundraiser">Apply for a \n fundraiser</string>
+    <string name="search_for_a_fundraiser">Search for a fundraiser</string>
+    <string-array name="currency">
+        <item>Rs</item>
+        <item>USD</item>
+    </string-array>
+
 </resources>
