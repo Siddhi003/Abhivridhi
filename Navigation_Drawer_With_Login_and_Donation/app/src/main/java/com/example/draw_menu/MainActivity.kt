@@ -13,6 +13,7 @@ import kotlinx.android.synthetic.main.content_main.*
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener{
     lateinit var homeFragment: HomeFragment
     lateinit var loginFragment: Login
+    lateinit var donationFragment: DonationFragment
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -34,18 +35,28 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         drawerLayout.closeDrawer(GravityCompat.START)
-        if (item.itemId == R.id.login) {
-            loginFragment = Login()
-            supportFragmentManager
-                .beginTransaction()
-                .replace(R.id.fragment_container, loginFragment)
-                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
-                .commit()
+        when(item.itemId) {
+             R.id.login -> {
+                loginFragment=Login()
+                supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.fragment_container, loginFragment)
+                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                    .commit()
+            }
+
+                R.id.donation -> {
+                    setToolbarTitle("Donation")
+                donationFragment=DonationFragment()
+                supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.fragment_container, donationFragment)
+                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                    .commit()
+            }
         }
         return true
     }
-
-
 
     fun setToolbarTitle(title: String){
         supportActionBar?.title = title
