@@ -24,7 +24,30 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" >
+
+        <ImageView
+            android:id="@+id/ivhomepage_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="56dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/homepage_bg" />
+
+        <TextView
+            android:id="@+id/tvabhivridhi"
+            android:layout_width="350dp"
+            android:layout_height="400dp"
+            android:layout_gravity="bottom"
+            android:fontFamily="@font/montserrat"
+            android:gravity="end"
+            android:paddingTop="40dp"
+            android:rotation="-90"
+            android:text="ABHIVRIDHI"
+            android:textColor="#FFFFFF"
+            android:textScaleX="1.1"
+            android:textSize="50sp" />
+    </FrameLayout>
 
 
 

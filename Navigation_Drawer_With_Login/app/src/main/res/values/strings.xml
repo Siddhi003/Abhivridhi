@@ -4,16 +4,22 @@
     <string name="close">close</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+  
     <string name="news_a">Indian National Disaster Management Authority reports that atleast 3 people have died in floods over 48 hours and
         it is caused due to excess rainfall in odisha, excess water was released in River Chambal from District Dholpur, which led to flood
         like situation in Districts Jalaun and Auraiya in Andhrapradesh.To help these people we
     </string>
+  
     <string name="news_b">An earthquake measuring 4.4 on the Richter Scale hit Mizoram on Monday. According to the National Center for 
         Seismology, the tremors were felt at 9.18 pm, in South of Thenzaw. The depth of the quake was 100 km.</string>
+  
     <string name="news_c">Indian National Disaster Management Authority reports that atleast 3 people have died in floods over 48 hours and
     it is caused due to excess rainfall in odisha, excess water was released in River Chambal from District Dholpur, which led to flood
     like situation in Districts Jalaun and Auraiya in Andhrapradesh.To help these people we</string>
+  
     <string name="news_d">An earthquake measuring 4.4 on the Richter Scale hit Mizoram on Monday. According to the National Center for
     Seismology, the tremors were felt at 9.18 pm, in South of Thenzaw. The depth of the quake was 100 km</string>
+  
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
 
 </resources>
