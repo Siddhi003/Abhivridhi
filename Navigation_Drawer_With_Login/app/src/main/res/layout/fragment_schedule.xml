@@ -9,7 +9,7 @@
     android:layout_marginTop="55dp">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/bselectdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#BAE8E8"

@@ -1,5 +1,6 @@
 package com.example.draw_menu
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
@@ -62,7 +63,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.donation -> {
                 changeFragment(DonationFragment())
             }
-            
+            R.id.fundraiser -> {
+                val intent = Intent(this, ScrollingActivity::class.java)
+                startActivity(intent)
+            }
         }
         return true
     }

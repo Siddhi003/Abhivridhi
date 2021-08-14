@@ -4,11 +4,13 @@ import android.annotation.SuppressLint
 import android.app.DatePickerDialog
 import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.content.res.AppCompatResources.getDrawable
 import androidx.fragment.app.Fragment
 import com.example.draw_menu.R.drawable.custom_dialog_background
@@ -44,6 +46,11 @@ class ScheduleFragment : Fragment() {
                 year, month, day,
             )
             dpd.show()
+        }
+        val btn1 = view.findViewById<Button>(R.id.bselectdate)
+        btn1.setOnClickListener{
+            Log.i("Siddhi","clicked")
+            Toast.makeText(activity, "Appointment Scheduled", Toast.LENGTH_LONG).show()
         }
 
     }

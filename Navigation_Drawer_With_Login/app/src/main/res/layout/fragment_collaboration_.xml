@@ -24,8 +24,13 @@
             android:id="@+id/ibback1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="#272343"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
             android:src="@drawable/ic_back"
-            android:background="#272343" />
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="95dp" />
         <TextView
             android:id="@+id/tvcollaboration"
             android:layout_width="match_parent"
