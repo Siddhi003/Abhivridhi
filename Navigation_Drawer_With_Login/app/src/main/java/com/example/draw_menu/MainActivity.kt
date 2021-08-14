@@ -14,6 +14,7 @@ import kotlinx.android.synthetic.main.content_main.*
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener{
     lateinit var homeFragment: HomeFragment
     lateinit var loginFragment: Login
+    lateinit var donationFragment: DonationFragment
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -58,11 +59,13 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.collaboration -> {
                 changeFragment(Collaboration_Fragment())
             }
+            R.id.donation -> {
+                changeFragment(DonationFragment())
+            }
+            
         }
         return true
     }
-
-
 
     fun setToolbarTitle(title: String){
         supportActionBar?.title = title
