@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/collab_header"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Collaboration_Fragment"
+    android:background="@color/white">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbcollab"
+        android:layout_width="match_parent"
+        android:layout_height="214dp"
+        android:background="#272343"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="3dp">
+
+        <ImageButton
+            android:id="@+id/ibback1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:background="#272343" />
+        <TextView
+            android:id="@+id/tvcollaboration"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="@font/montserrat"
+            android:text="COLLABORATION"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.363"
+            android:paddingStart="30dp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tvSelectRegion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select A Region"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montserrat"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/fbthreads"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbcollab" />
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/fbthreads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:flexDirection="row"
+        app:flexWrap="wrap"
+        app:justifyContent="space_around"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbcollab"
+        app:layout_constraintVertical_bias="0.303">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivthread1"
+            android:layout_width="182dp"
+            android:layout_height="167dp"
+            android:layout_marginRight="44dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/gu_bg"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+            app:strokeColor="@color/black"
+            app:strokeWidth="5dp" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivthread2"
+            android:layout_width="182dp"
+            android:layout_height="167dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/na_bg"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+            app:strokeColor="@color/black"
+            app:strokeWidth="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="Gujarat"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="National"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

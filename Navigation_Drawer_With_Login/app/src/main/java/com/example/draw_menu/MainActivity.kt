@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_main.*
@@ -24,16 +25,21 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         toggle.syncState()
 
         nav_menu.setNavigationItemSelectedListener(this)
-        homeFragment = HomeFragment()
+        changeFragment(HomeFragment())
+        /*homeFragment = HomeFragment()
         supportFragmentManager
             .beginTransaction()
             .replace(R.id.fragment_container, homeFragment)
             .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
-            .commit()
+            .commit() */
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         drawerLayout.closeDrawer(GravityCompat.START)
+        /*if (item.itemId == R.id.home) {
+            changeFragment(HomeFragment())
+        }
+
         if (item.itemId == R.id.login) {
             loginFragment = Login()
             supportFragmentManager
@@ -41,6 +47,17 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 .replace(R.id.fragment_container, loginFragment)
                 .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
                 .commit()
+        } */
+        when(item.itemId) {
+            R.id.home -> {
+                changeFragment(HomeFragment())
+            }
+            R.id.login -> {
+                changeFragment(Login())
+            }
+            R.id.collaboration -> {
+                changeFragment(Collaboration_Fragment())
+            }
         }
         return true
     }
@@ -51,4 +68,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         supportActionBar?.title = title
     }
 
+    fun changeFragment(frag: Fragment) {
+        val fragment = supportFragmentManager.beginTransaction()
+        fragment.replace(R.id.fragment_container,frag).commit()
+    }
+
 }
+
+

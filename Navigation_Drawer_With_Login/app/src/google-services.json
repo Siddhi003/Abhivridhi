@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "925966879557",
+    "project_id": "collab-chat-f4538",
+    "storage_bucket": "collab-chat-f4538.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925966879557:android:281d870a48628c96104c2c",
+        "android_client_info": {
+          "package_name": "com.example.draw_menu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925966879557-mm6u7a2dnrmnik2eh9ne6n9v1lc8au1o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCS1Rbv3iC3hfz6E5duAfpkvUYs79j5_l0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925966879557-mm6u7a2dnrmnik2eh9ne6n9v1lc8au1o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
